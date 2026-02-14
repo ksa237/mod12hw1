@@ -1,0 +1,53 @@
+04:49:58: Executing 'bootRun'…
+
+> Task :compileJava
+> Task :processResources UP-TO-DATE
+> Task :classes
+> Task :resolveMainClassName
+
+> Task :bootRun
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.1.5)
+
+2026-02-15T04:49:59.812+10:00  INFO 23238 --- [           main] ru.netology.app.MyApplication            : Starting MyApplication using Java 17.0.6 with PID 23238 (/home/sa/netology/module12/hw1_noSQL/hw1-no-sql/build/classes/java/main started by sa in /home/sa/netology/module12/hw1_noSQL/hw1-no-sql)
+2026-02-15T04:49:59.814+10:00  INFO 23238 --- [           main] ru.netology.app.MyApplication            : No active profile set, falling back to 1 default profile: "default"
+2026-02-15T04:50:00.080+10:00  INFO 23238 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2026-02-15T04:50:00.103+10:00  INFO 23238 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 21 ms. Found 1 MongoDB repository interfaces.
+2026-02-15T04:50:00.290+10:00  INFO 23238 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2026-02-15T04:50:00.296+10:00  INFO 23238 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-02-15T04:50:00.296+10:00  INFO 23238 --- [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.15]
+2026-02-15T04:50:00.350+10:00  INFO 23238 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-02-15T04:50:00.350+10:00  INFO 23238 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 511 ms
+2026-02-15T04:50:00.436+10:00  INFO 23238 --- [           main] org.mongodb.driver.client                : MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync|spring-boot", "version": "4.9.1"}, "os": {"type": "Linux", "name": "Linux", "architecture": "amd64", "version": "6.12.41-6.12-alt1"}, "platform": "Java/BellSoft/17.0.6+10-LTS"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=MongoCredential{mechanism=null, userName='admin', source='admin', password=<hidden>, mechanismProperties=<hidden>}, streamFactoryFactory=null, commandListeners=[], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, CollectionCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.client.model.mql.ExpressionCodecProvider@34b9eb03, com.mongodb.Jep395RecordCodecProvider@43fda8d9]}, loggerSettings=LoggerSettings{maxDocumentLength=1000}, clusterSettings={hosts=[localhost:27017], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='30000 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, sendBufferSize=0}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, sendBufferSize=0}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, contextProvider=null}
+2026-02-15T04:50:00.451+10:00  INFO 23238 --- [localhost:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=17, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=9697514}
+2026-02-15T04:50:00.696+10:00  INFO 23238 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2026-02-15T04:50:00.700+10:00  INFO 23238 --- [           main] ru.netology.app.MyApplication            : Started MyApplication in 1.077 seconds (process running for 1.242)
+2026-02-15T04:51:26.581+10:00  INFO 23238 --- [nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-02-15T04:51:26.581+10:00  INFO 23238 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-02-15T04:51:26.582+10:00  INFO 23238 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2026-02-15T04:51:26.607+10:00 DEBUG 23238 --- [nio-8080-exec-1] o.s.data.mongodb.core.MongoTemplate      : Remove using query: { "_id" : { "$oid" : "6990c2033a860a64c8b52845"}} in collection: users.
+2026-02-15T04:51:42.384+10:00 DEBUG 23238 --- [nio-8080-exec-2] o.s.data.mongodb.core.MongoTemplate      : find using query: {} fields: Document{{}} for class: class ru.netology.app.model.User in collection: users
+2026-02-15T04:51:59.719+10:00 DEBUG 23238 --- [nio-8080-exec-3] o.s.data.mongodb.core.MongoTemplate      : Remove using query: { "_id" : { "$oid" : "6990c1203a860a64c8b52844"}} in collection: users.
+2026-02-15T04:52:02.342+10:00 DEBUG 23238 --- [nio-8080-exec-4] o.s.data.mongodb.core.MongoTemplate      : find using query: {} fields: Document{{}} for class: class ru.netology.app.model.User in collection: users
+2026-02-15T04:53:21.792+10:00  WARN 23238 --- [nio-8080-exec-8] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' is not supported]
+2026-02-15T04:53:24.233+10:00 DEBUG 23238 --- [nio-8080-exec-9] o.s.data.mongodb.core.MongoTemplate      : find using query: {} fields: Document{{}} for class: class ru.netology.app.model.User in collection: users
+2026-02-15T04:53:36.124+10:00 DEBUG 23238 --- [io-8080-exec-10] o.s.data.mongodb.core.MongoTemplate      : Inserting Document containing fields: [name, email, age, _class] in collection: users
+2026-02-15T04:53:38.228+10:00 DEBUG 23238 --- [nio-8080-exec-1] o.s.data.mongodb.core.MongoTemplate      : find using query: {} fields: Document{{}} for class: class ru.netology.app.model.User in collection: users
+2026-02-15T04:54:20.422+10:00 DEBUG 23238 --- [nio-8080-exec-2] o.s.d.m.r.query.MongoQueryCreator        : Created query Query: { "name" : { "$regularExpression" : { "pattern" : ".*Tea.*", "options" : ""}}}, Fields: {}, Sort: {}
+2026-02-15T04:54:20.431+10:00 DEBUG 23238 --- [nio-8080-exec-2] o.s.data.mongodb.core.MongoTemplate      : find using query: { "name" : { "$regularExpression" : { "pattern" : ".*Tea.*", "options" : ""}}} fields: Document{{}} for class: class ru.netology.app.model.User in collection: users
+2026-02-15T04:55:17.252+10:00 DEBUG 23238 --- [nio-8080-exec-5] o.s.d.m.r.query.MongoQueryCreator        : Created query Query: { "email" : "oleg@ya.ru"}, Fields: {}, Sort: {}
+2026-02-15T04:55:17.254+10:00 DEBUG 23238 --- [nio-8080-exec-5] o.s.data.mongodb.core.MongoTemplate      : find using query: { "email" : "oleg@ya.ru"} fields: Document{{}} for class: class ru.netology.app.model.User in collection: users
+2026-02-15T04:58:55.626+10:00 DEBUG 23238 --- [nio-8080-exec-8] o.s.data.mongodb.core.MongoTemplate      : Inserting Document containing fields: [name, email, age, _class] in collection: users
+2026-02-15T04:59:47.334+10:00 DEBUG 23238 --- [nio-8080-exec-9] o.s.d.m.r.query.MongoQueryCreator        : Created query Query: { "age" : 45}, Fields: {}, Sort: {}
+2026-02-15T04:59:47.335+10:00 DEBUG 23238 --- [nio-8080-exec-9] o.s.data.mongodb.core.MongoTemplate      : find using query: { "age" : 45} fields: Document{{}} for class: class ru.netology.app.model.User in collection: users
+2026-02-15T04:59:56.748+10:00 DEBUG 23238 --- [nio-8080-exec-1] o.s.d.m.r.query.MongoQueryCreator        : Created query Query: { "age" : 45}, Fields: {}, Sort: {}
+2026-02-15T04:59:56.749+10:00 DEBUG 23238 --- [nio-8080-exec-1] o.s.data.mongodb.core.MongoTemplate      : find using query: { "age" : 45} fields: Document{{}} for class: class ru.netology.app.model.User in collection: users
+2026-02-15T05:00:07.637+10:00 DEBUG 23238 --- [nio-8080-exec-2] o.s.d.m.r.query.MongoQueryCreator        : Created query Query: { "age" : { "$gt" : 40, "$lt" : 50}}, Fields: {}, Sort: {}
+2026-02-15T05:00:07.638+10:00 DEBUG 23238 --- [nio-8080-exec-2] o.s.data.mongodb.core.MongoTemplate      : find using query: { "age" : { "$gt" : 40, "$lt" : 50}} fields: Document{{}} for class: class ru.netology.app.model.User in collection: users
+
